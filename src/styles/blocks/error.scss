@@ -1,0 +1,75 @@
+.error {
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+    background: #E15433;
+    height: 40px;
+    width: 280px;
+    border-radius: 4px;
+    position: absolute;
+    top: -52px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    &:before {
+        content: '';
+        display: block;
+        border: 9px solid transparent;
+        border-top-color: #E15433;
+        position: absolute;
+        top: 100%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        transform: translateX(-50%);
+    }
+    &-checkbox {
+        display: none;
+        justify-content: center;
+        align-items: center;
+        background: #E15433;
+        height: 40px;
+        color: white;
+        border-radius: 4px;
+        width: 280px;
+        margin-bottom: 16px;
+        font-size: 16px;
+        line-height: 24px;
+        position: relative;
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: 100%;
+            left: 10px;
+            width: 0;
+            height: 0;
+            border: 9px solid transparent;
+            border-bottom-color: #E15433;
+
+        }
+    }
+    &-exist {
+        display: none;
+        align-items: center;
+        background: #E15433;
+        height: 64px;
+        color: white;
+        border-radius: 4px;
+        width: 100%;
+        padding: 0 24px 0 64px;
+        margin-bottom: 16px;
+        box-sizing: border-box;
+        font-size: 16px;
+        line-height: 24px;
+        @include phone() {
+            padding-left: 36px;
+        }
+    }
+}
+
+.active {
+    display: flex;
+}

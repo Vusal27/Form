@@ -1,0 +1,48 @@
+.header {
+    padding: 16px 7%;
+    @include tablet() {
+        padding: 16px 20px;
+    }
+    @include phone() {
+        padding: 16px 10px;
+    }
+    &__logo {
+        width: 280px;
+        height: 35px;
+        background: white;
+        @include tablet() {
+            width: 260px;
+        }
+        @include phone() {
+            width: 130px;
+        }
+    }
+    &__btn {
+        border: 1px solid #D8E1E6;
+        border-radius: 5px;
+        color: white;
+        display: flex;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: bold;
+        padding: 10px 15px 10px 50px;
+        box-sizing: border-box;
+        width: 120px;
+        height: 40px;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        font-family: 'opensans';
+        &:before {
+            content: '';
+            display: block;
+            height: 24px;
+            width: 24px;
+            background: url('../images/icons/user.svg');
+            position: absolute;
+            top: 8px;
+            left: 20px;
+
+        }
+    }
+}

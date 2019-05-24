@@ -1,0 +1,60 @@
+html, body {
+    width: 100vw;
+    height: 100%;
+    font-family: 'san-francisco', Helvetica, sans-serif;
+    overflow-x: hidden;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+ul li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+p {
+    margin: 0px;
+    line-height: 1.42;
+}
+h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    font-weight: normal;
+}
+button {
+    outline: none;
+}
+
+:root {
+    font-size: 15px;
+    @include laptop {
+        font-size: 14px;
+    }
+    @include tablet {
+        font-size: 13px; 
+    }
+    @include phone {
+        font-size: 12px;
+    }
+}
+input, textarea {
+    box-sizing: border-box;
+}
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    position: relative;
+    background: #0b172a;
+}
+.container {
+    padding: 16px 0 0 7%;
+    display: flex;
+    justify-content: space-between;
+    @include tablet() {
+        padding: 16px 20px 0;
+    }
+    @include phone() {
+        padding: 16px 10px 0;
+    }
+}

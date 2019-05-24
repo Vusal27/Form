@@ -1,0 +1,33 @@
+.img {
+    width: 115%;
+    height: 613px;
+    transform: translateX(-12%);
+    @include laptop() {
+        width: auto;
+    }
+    @include laptop-sm() {
+        display: none;
+    }
+    &-wrap {
+        max-height: 613px;
+        width: 50%;
+        position: relative;
+        @include laptop() {
+            width: 39%;
+        }
+        @include tablet() {
+            display: none;
+        }
+    }
+    &-phone {
+        position: absolute;
+        width: 245px;
+        height: 482px;
+        left: 0;
+        bottom: 0;
+        transform: translateX(-50%);
+        @include laptop-sm() {
+            transform: translateX(0);
+        }
+    }
+}
