@@ -59,6 +59,7 @@
         font-size: 16px;
         line-height: 24px;
         cursor: pointer;
+        z-index: 100;
     }
     &__input {
         padding: 30px 24px 8px;
@@ -185,4 +186,9 @@
         margin-bottom: 64px;
         font-family: 'opensans';
     }
+}
+input:-webkit-autofill {
+    box-shadow: 0 0 0 1000px #212d3e inset;
+    -webkit-text-fill-color: #F5F8FA;
+    border-color: #1C945D !important;
 }
