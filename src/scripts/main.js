@@ -68,12 +68,17 @@ function validate(form) {
     return valid;
 }
 
-// Ховер
+// Ховер для input
 function mouseOver(event) {
     event.target.style.borderColor = '#20A86B';
 }
 
-// Обратный ховеру эффект
+// Ховер для placeholder
+function mouseOverPlace(event) {
+    event.target.previousElementSibling.style.borderColor = '#20A86B';
+}
+
+// Обратный ховеру эффект для input
 function mouseOut(event) {
     if (!event.target.value) {
         event.target.style.borderColor = 'transparent';
