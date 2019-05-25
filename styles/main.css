@@ -259,6 +259,7 @@ textarea {
   font-size: 16px;
   line-height: 24px;
   cursor: pointer;
+  z-index: 100;
 }
 
 .form__input {
@@ -418,6 +419,13 @@ textarea {
   margin-top: 8px;
   margin-bottom: 64px;
   font-family: 'opensans';
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 1000px #212d3e inset;
+  box-shadow: 0 0 0 1000px #212d3e inset;
+  -webkit-text-fill-color: #F5F8FA;
+  border-color: #1C945D !important;
 }
 
 .img {
